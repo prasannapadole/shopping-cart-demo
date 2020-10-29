@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-import com.shopping.cart.service.ProductService;
-import com.shopping.cart.service.UserService;
+import com.shopping.cart.manager.ProductManager;
+import com.shopping.cart.manager.UserManager;
 
 @SpringBootApplication
 @EnableJpaAuditing
@@ -14,9 +14,9 @@ public class CartApplication {
 	
 	public static void main(String args[]) {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(CartApplication.class, args);
-		ProductService productService = applicationContext.getBean(ProductService.class);
+		ProductManager productService = applicationContext.getBean(ProductManager.class);
 		productService.saveInitialBatch();
-		UserService userService = applicationContext.getBean(UserService.class);
+		UserManager userService = applicationContext.getBean(UserManager.class);
 		userService.saveInitialBatch();
 	}
 

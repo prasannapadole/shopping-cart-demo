@@ -1,8 +1,9 @@
 package com.shopping.cart.controller;
 
-import com.shopping.cart.domain.Cart;
 import com.shopping.cart.dto.ShoppingCartDTO;
-import com.shopping.cart.service.ShoppingCartService;
+import com.shopping.cart.manager.ShoppingCartManager;
+import com.shopping.cart.model.Cart;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,7 +14,7 @@ import java.util.List;
 public class ShoppingCartController {
 
     @Autowired
-    private ShoppingCartService shoppingCartService;
+    private ShoppingCartManager shoppingCartService;
 
     @RequestMapping(method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     public Cart addProductItem(@RequestBody ShoppingCartDTO shoppingCartDTO) {

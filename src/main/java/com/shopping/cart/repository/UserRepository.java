@@ -1,7 +1,8 @@
 package com.shopping.cart.repository;
 
-import com.shopping.cart.domain.User;
 import org.springframework.data.repository.CrudRepository;
+
+import com.shopping.cart.model.User;
 
 public interface UserRepository extends CrudRepository<User, Long> {
 }

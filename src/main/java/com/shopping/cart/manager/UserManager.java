@@ -1,6 +1,6 @@
-package com.shopping.cart.service;
+package com.shopping.cart.manager;
 
-import com.shopping.cart.domain.User;
+import com.shopping.cart.model.User;
 import com.shopping.cart.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class UserService {
+public class UserManager {
     @Autowired
     private UserRepository userRepository;
 

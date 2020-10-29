@@ -1,6 +1,6 @@
-package com.shopping.cart.service;
+package com.shopping.cart.manager;
 
-import com.shopping.cart.domain.Product;
+import com.shopping.cart.model.Product;
 import com.shopping.cart.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class ProductService{
+public class ProductManager{
 
     @Autowired
     private ProductRepository productRepository;

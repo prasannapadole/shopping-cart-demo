@@ -1,7 +1,8 @@
 package com.shopping.cart.controller;
 
-import com.shopping.cart.domain.Product;
-import com.shopping.cart.service.ProductService;
+import com.shopping.cart.manager.ProductManager;
+import com.shopping.cart.model.Product;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -14,7 +15,7 @@ import java.util.List;
 public class ProductController {
 
     @Autowired
-    private ProductService productService;
+    private ProductManager productService;
 
     @RequestMapping(method = RequestMethod.GET, produces = "application/json")
     public List<Product> getAll(){

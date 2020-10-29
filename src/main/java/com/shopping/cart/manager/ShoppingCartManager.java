@@ -1,8 +1,8 @@
-package com.shopping.cart.service;
+package com.shopping.cart.manager;
 
-import com.shopping.cart.domain.Product;
-import com.shopping.cart.domain.Cart;
 import com.shopping.cart.dto.ShoppingCartDTO;
+import com.shopping.cart.model.Cart;
+import com.shopping.cart.model.Product;
 import com.shopping.cart.repository.ProductRepository;
 import com.shopping.cart.repository.ShoppingCartRepository;
 import com.shopping.cart.repository.UserRepository;
@@ -15,7 +15,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class ShoppingCartService {
+public class ShoppingCartManager {
 
     @Autowired
     private ProductRepository productRepository;

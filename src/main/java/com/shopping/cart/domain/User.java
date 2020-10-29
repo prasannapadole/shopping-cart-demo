@@ -1,4 +1,4 @@
-package com.shopping.cart.entity;
+package com.shopping.cart.domain;
 
 import java.util.ArrayList;
 import java.util.List;

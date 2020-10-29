@@ -14,14 +14,10 @@ public class CartApplication {
 	
 	public static void main(String args[]) {
 		ConfigurableApplicationContext applicationContext = SpringApplication.run(CartApplication.class, args);
-
 		ProductService productService = applicationContext.getBean(ProductService.class);
 		productService.saveInitialBatch();
-
 		UserService userService = applicationContext.getBean(UserService.class);
 		userService.saveInitialBatch();
-
-
 	}
 
 }

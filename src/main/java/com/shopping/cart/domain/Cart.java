@@ -21,7 +21,7 @@ public class Cart implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column( name = "id" )
-	private long id;
+	private Long id;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")

@@ -20,16 +20,16 @@ public class Product implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "id")
-	private long id;
+	private Long id;
 	
 	@Column(name = "product_name")
 	private String productName;
 	
 	@Column(name = "price")
-	private double price;
+	private Double price;
 	
 	@Column(name = "quantity")
-	private int quantity;
+	private Integer quantity;
 	
 	@OneToMany(fetch = FetchType.LAZY, mappedBy = "product")
 	private List<Cart> carts = new ArrayList<>();
@@ -38,18 +38,18 @@ public class Product implements Serializable {
 		
 	}
 
-	public Product(String productName, double price, int quantity) {
+	public Product(String productName, Double price, Integer quantity) {
 		super();
 		this.productName = productName;
 		this.price = price;
 		this.quantity = quantity;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -61,19 +61,19 @@ public class Product implements Serializable {
 		this.productName = productName;
 	}
 
-	public double getPrice() {
+	public Double getPrice() {
 		return price;
 	}
 
-	public void setPrice(double price) {
+	public void setPrice(Double price) {
 		this.price = price;
 	}
 
-	public int getQuantity() {
+	public Integer getQuantity() {
 		return quantity;
 	}
 
-	public void setQuantity(int quantity) {
+	public void setQuantity(Integer quantity) {
 		this.quantity = quantity;
 	}
 	

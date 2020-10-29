@@ -2,9 +2,6 @@ package com.shopping.cart.dto;
 
 import java.util.List;
 
-/**
- * Created by sahan on 4/14/2016.
- */
 public class ShoppingCartIdDTO {
     private List<Long> ids;
 

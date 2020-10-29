@@ -9,9 +9,6 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by sahan on 4/9/2016.
- */
 @Service
 @Transactional
 public class UserService {

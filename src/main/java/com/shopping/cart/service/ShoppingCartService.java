@@ -13,9 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.Date;
 import java.util.List;
 
-/**
- * Created by sahan on 4/9/2016.
- */
 @Service
 @Transactional
 public class ShoppingCartService {

@@ -9,9 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-/**
- * Created by sahan on 4/9/2016.
- */
 @RestController
 @RequestMapping("/products")
 public class ProductController {

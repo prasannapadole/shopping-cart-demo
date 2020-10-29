@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-/**
- * Created by sahan on 4/9/2016.
- */
 @RestController
 @RequestMapping("/shoppingCart")
 public class ShoppingCartController {

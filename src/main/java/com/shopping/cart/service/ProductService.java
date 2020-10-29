@@ -9,9 +9,6 @@ import javax.transaction.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by sahan on 4/8/2016.
- */
 @Service
 @Transactional
 public class ProductService{
@@ -22,16 +19,16 @@ public class ProductService{
     private static List<Product> products = new ArrayList<>();
 
     static {
-        products.add(new Product("Soap",35.75d,1000));
-        products.add(new Product("Tooth Brushe",45.50d,500));
-        products.add(new Product("Shirt",1500.0d,100));
-        products.add(new Product("Office Bag",1000.0d,400));
-        products.add(new Product("Bottle",450.0d,800));
-        products.add(new Product("Wrist Watch",2500.0d,800));
-        products.add(new Product("Mobile Phone",45000.0d,800));
-        products.add(new Product("Shampoo",300.0d,800));
-        products.add(new Product("Leather Wallets",550.0d,800));
-        products.add(new Product("Camera",85000.0d,800));
+        products.add(new Product("Puma Shoes",5400.89d,2));
+        products.add(new Product("Apple Watch",45000.50d,1));
+        products.add(new Product("Raymond Shirt",1500.0d,5));
+        products.add(new Product("Mobile",12000.0d,4));
+        products.add(new Product("Camera",8000.0d,1));
+        products.add(new Product("Wrist Watch",2500.0d,8));
+        products.add(new Product("Blazzor",4500.0d,8));
+        products.add(new Product("Cap",300.0d,8));
+        products.add(new Product("Wallets",550.0d,80));
+        products.add(new Product("Bottle",85.0d,800));
     }
 
     public void saveInitialBatch(){

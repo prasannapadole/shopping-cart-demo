@@ -1,8 +1,5 @@
 package com.shopping.cart.dto;
 
-/**
- * Created by sahan on 4/10/2016.
- */
 public class ShoppingCartDTO {
     private Long productId;
     private Integer stock;
